@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: hsl(var(--hue), 100%, 20%);
 }
 
@@ -31,7 +32,15 @@ body.correct {
 body.wrong {
   --hue: var(--hue-wrong);
 }
-
+.title{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:700px;
+  margin-bottom: 60px;
+  color:white;
+  box-shadow: 0 0 10px 2px;
+}
 .container {
   width: 800px;
   max-width: 80%;
@@ -81,9 +90,11 @@ body.wrong {
 .controls {
   display: flex;
   justify-self: center;
+  justify-content: center;
   align-items: center;
 }
 
 .hide {
   display: none;
 }
+
